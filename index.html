@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Candidatos Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Mis Candidatos Web <img src="/img/Captura de pantalla 2024-11-20 a la(s) 12.43.41 a. m.-Photoroom.png" alt="Foto del candidato" class="profile-img-header"></h1>
+        <p>Ingeniero en Software - Desarrollador Full Stack</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#perfil">Perfil Profesional</a></li>
+            <li><a href="#educacion">Emails</a></li>
+            <li><a href="#experiencia">Respuestas</a></li>
+            <li><a href="#habilidades">Solicitudes</a></li>
+            <li><a href="#contacto">Candidatos</a></li>
+        </ul>
+    </nav>
+
+    <section id="perfil">
+        <img src="img/juan.jpg" alt="Juan Pérez" class="profile-img">
+        <h2>Juan Pérez</h2>
+        <p>Soy un ingeniero en software con más de 5 años de experiencia en desarrollo de aplicaciones web y móviles. Me especializo en la creación de soluciones innovadoras con tecnologías como JavaScript, Python y React. Mi pasión por la programación y el diseño de experiencias de usuario me ha permitido trabajar en proyectos de alto impacto.</p>
+        <div class="buttons-container">
+            <button onclick="verMas()">Ver más</button>
+            <button onclick="descargarCV()">Descargar CV</button>
+        </div>
+    </section>
+
+    <section id="educacion">
+        <h2>Educación</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Grado</th>
+                    <th>Institución</th>
+                    <th>Año de Graduación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ingeniería en Software</td>
+                    <td>Universidad de Tecnología</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <td>Diplomado en UX/UI</td>
+                    <td>Academia Digital</td>
+                    <td>2022</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="experiencia">
+        <h2>Experiencia Laboral</h2>
+        <ul>
+            <li><strong>Desarrollador Web - Empresa ABC</strong> (2021 - Actualidad)</li>
+            <li><strong>Desarrollador Junior - Empresa XYZ</strong> (2019 - 2021)</li>
+        </ul>
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>JavaScript, React, Node.js</li>
+            <li>Desarrollo de Aplicaciones Móviles</li>
+            <li>Diseño de UX/UI</li>
+            <li>Gestión de Proyectos Ágiles</li>
+        </ul>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="contact-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" required></textarea><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mis Candidatos Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
